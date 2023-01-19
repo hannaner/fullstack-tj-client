@@ -34,6 +34,27 @@ export const onShowItemSuccess = (item) => {
         <p>quantity: ${item.quantity}<p>
         <p>item no: ${item._id}</p>
         <hr>
+
+        <form data-id="${item._id}">
+            <input type="text" name="itemName" value="${item.itemName}">
+
+            <input type="text" name="description" value="${item.description}">
+
+            <input type="number" name="quantity" value="${item.quantity}">
+
+            <input type="submit" value="Update item">
+      </form>
+
+      <button data-id="${item._id}">Remove item</button>
+
     `
     showItemContainer.appendChild(div)
+}
+
+export const onItemUpdateSuccess = () => {
+    messageContainer.innerText = `Item has been updated`
+}
+
+export const onDeleteItemSuccess = () => {
+    messageContainer.innerText = 'Item removed'
 }
