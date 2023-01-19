@@ -8,7 +8,7 @@ export const onIndexItemSuccess = (items) => {
         const div = document.createElement('div')
         div.innerHTML = `
             <h4>${item.itemName}</h4>
-            <button data-id="${item._id}">Show more details</button>
+            <button data-id="${item._id}">Details</button>
         `
 
         indexItemContainer.appendChild(div)
