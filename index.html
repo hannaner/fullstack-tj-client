@@ -8,9 +8,17 @@
     <title>Trader Joe's shopping cart</title>
 </head>
 <body>
+    <h2>Trader Joe's shopping list</h2>
+    <div id="show-item-container"></div>
     <div id="message-container"></div>
     <div id="index-item-container"></div>
-    <div id="show-item-container"></div>
-
+    <br>
+    <form id="create-item-form">
+        <p>Add items:</p>
+        <input type="text" name="itemName" placeholder="item name">
+        <input type="text" name="description" placeholder="description">
+        <input type="number" name="quantity" placeholder="quantity">
+        <input type="submit" placeholder="Add item">
+    </form>
 </body>
 </html>
